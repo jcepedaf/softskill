@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "firstName": "Jesús",
+      "lastName": "Cepeda",
+      "email": "jcepedaf@gmail.com"
+    },
+    {
+      "firstName": "Pedro",
+      "lastName": "Suarez",
+      "email": "psuarez@gmail.com"
+    }
+  ]
+  
+}
