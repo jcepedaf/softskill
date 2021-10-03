@@ -12,14 +12,18 @@ function App() {
   }, [])
 
   return (
-  <>
-  <h1>Contador</h1>
-  <p>{clicks}</p>
-  <button onClick={()=>setClicks(clicks+1)}>+</button>
-  <button onClick={()=>clicks>0? setClicks(clicks-1): clicks}>-</button>
-  <h1>API</h1>
-  <table>
-    <thead>
+  <div className="container">
+    <div>
+  <h1>Counter clicks</h1>
+  <button onClick={()=>clicks>0? setClicks(clicks-1): clicks} type="button" className="btn btn-primary btn-sm">-</button>
+  <input value={clicks}></input>
+  <button onClick={()=>setClicks(clicks+1)} type="button" className="btn btn-primary btn-sm">+</button>
+  </div>
+  <div>
+  <h1>Fake API</h1>
+  
+  <table className="table">
+    <thead className="thead-dark">
       <tr>
         <th>Name</th>
         <th>Last Name</th>
@@ -38,8 +42,9 @@ function App() {
       })}  
       </tbody>
   </table>
+  </div>
   
-  </>);
+  </div>);
 }
 
 export default App;
